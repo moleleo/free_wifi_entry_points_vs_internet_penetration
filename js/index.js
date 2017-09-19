@@ -139,7 +139,7 @@ d3.csv("./data/data.csv", function(error, data) {
      .attr(
        "transform",
        "translate(" + (-2*margin.left/3) + "," + (height/2) + ")rotate(-90)")
-     .text("Value");
+     .text("Número de puntos de wifi gratuito");
 
   svg.append("text")
      .attr("text-anchor", "middle")
