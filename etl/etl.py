@@ -24,4 +24,4 @@ puntos_wifi = puntos_wifi.groupby('cod_dpto')['puntos_wifi'].sum().to_frame()
 puntos_wifi = puntos_wifi.join(nombres)
 puntos_wifi['penetracion'] = penetracion['penetracion'].tolist()
 
-puntos_wifi.to_json('../data/data.json', orient='records')
+puntos_wifi.fillna(0).to_csv('../data/data.csv')
