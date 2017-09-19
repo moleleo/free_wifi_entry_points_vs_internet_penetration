@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class='container'>
+    <div class="page-header">
+      <h1>Internet gratuito VS Internet por suscripción
+        <small>Diva Martínez</small>
+      </h1>
+    </div>
+    <div id="chart" class="col-md-9"></div>
+    <div id="chart" class="col-md-3">
+
+      <h3>¿Correlacionados?</h3>
+      <p>
+        <strong>No hay relación</strong> entre el número de puntos de accesos
+        gratuitos a Wifi por departamento, y la penetración de
+        internet por suscripción. (Corr = 0.1)
+      </p>
+      <h3>¿Dónde hacen falta?</h3>
+      <p>
+        Departamentos con poca penetración de internet como
+        <strong>Vaupés</strong>, <strong>Arauca</strong>, <strong>Norte de Santander</strong> y <strong>Nariño</strong> se verían beneficiados por más puntos de acceso gratuito.
+      </p>
+      <h3>Fuentes de Datos:</h3>
+      <p><a src="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Int-Dedicado-Suscri-Dpto-2016-2-T/7mb2-pfi4">Internet dedicado por suscripción (datos.gov.co)</a>
+      </p>
+      <p><a src="https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ZONAS-WIFI-GRATIS-PARA-LA-GENTE-01-SEPTIEMBRE-2017/gp3p-z3c2">Punto de acceso a Wifi Gratis (datos.gov.co)</a>
+      </p>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>

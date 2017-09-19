@@ -16,9 +16,8 @@ puntos_wifi = read_csv(IN_W).rename(
 nombres = (puntos_wifi[['cod_dpto', 'dpto', 'region']]
            .drop_duplicates()
            .set_index('cod_dpto', verify_integrity=True))
-
+nombres['region'] = nombres['region'].str.slice(start=len('Región '))
 penetracion = read_csv(IN_P).rename(columns={'PENETRACION_2015_2T': 'penetracion'})
-penetracion['penetracion'] *= 100
 
 puntos_wifi = puntos_wifi.groupby('cod_dpto')['puntos_wifi'].sum().to_frame()
 puntos_wifi = puntos_wifi.join(nombres)
